@@ -1,15 +1,108 @@
-.container {
-  width: 60%;
-  margin-right: 10%;
-  margin-left: 20%;
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-image: url("icono.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body {
+  width: auto;
+  height: auto;
+  padding: 5%;
+  margin: 8%;
+  background-color: rgba(128, 222, 234, 0.5);
+}
+.disCalc {
+  padding: 2%;
+  border: #455a64 4px solid;
+  box-shadow: 2px 2px 1px #90a4ae, 3px 3px 1px #b0bec5, 4px 4px 1px #cfd8dc,
+    5px 5px 1px #000000, 7px 7px 28px #b2ebf2;
+  border-radius: 137px 32px 147px 24px;
 }
 
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 5px;
+  margin: 5px;
+}
+/*Diseño para pedir dia*/
+
+.diaSelect {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  justify-content: space-around;
+  
+}
+#pedirNumero {
+  font-style: oblique;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 2px black solid;
+  font-weight: bold;
+  background-color: aquamarine;
+  height: 60px;
+  width: 70px;
+  border-radius: 25px;
+}
+textarea {
+  margin: 0%;
+  width: 120px;
+  height: 120px;
+  border: 3px solid black;
+  background-color: transparent;
+  max-width: 50%;
+  min-width: 75%;
+  max-height: 100px;
+  min-height: 120px;
+  border-radius: 5%;
+  
+}
+.text{
+  color: black;
+   text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+/*Titulo principal*/
+.calculator h1 {
+  text-shadow: #fafafa 1px 1px 2px, #fafafa 2px 2px 4px, #fafafa 3px 3px 6px,
+    #263238 1px 1px 2px, #fafafa 5px 5px 10px;
+  color: black;
+}
+/*diseño display numerico*/
+#data {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 2%;
+  font-size: 18px;
+  color: darkblue;
+  background-color: rgba(86, 101, 115, 0.8);
+  border-radius: 23px;
+  border: darkgreen 2px solid;
+  align-items: center;
+}
+/*diseño de espacio teclado numerico*/
+
 .calculator-data {
-  /*background-color: thistle;*/
-  border: 5px #fafafa solid;
+  background-color: rgba(12, 12, 12, 0.521);
+  border: 3px #fafafa solid;
   border-right: 5px #fafafa solid;
   border-bottom: 5px #fafafa solid;
   padding: 1%;
+  margin: 12px;
+  margin-top: 1px;
 }
 
 .column {
@@ -24,40 +117,22 @@
 
 .btn-number {
   width: 30%;
-  font-size: 25px;
+  font-size: 18px;
   margin: 0% 1% 1% 1%;
   background-color: black;
   color: white;
-  border: 5px pink solid;
+  border: 2px rgb(81, 45, 168) solid;
   border-radius: 20px;
 }
 
 .btn-operator {
   width: 100%;
-  font-size: 30px;
+  font-size: 18px;
+  margin: 0% 3% 1% 2%;
   margin-bottom: 4%;
   background-color: black;
   color: pink;
-  border: 5px pink solid;
+  border: 2px rgb(40, 53, 147) solid;
   border-radius: 20px;
-}
-
-#data {
-  width: 100%;
-  height: 50px;
-  margin-bottom: 2%;
-  font-size: 20px;
-  color: pink;
-  background-color: black;
-  border-radius: 23px;
-}
-#pedirNumero {
-  font-style: oblique;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  border: 5px black solid;
-  font-weight: bold;
-  background-color: aquamarine;
-  height: 80px;
-  width: 80px;
-  border-radius: 25px;
+  padding: 2px;
 }
